@@ -1,7 +1,7 @@
 # MYSQL_FOR_BEGINNER
 
 ## Install on MAC Intel
--Download Mysql Community server
+- Download Mysql Community server
 - Install Default 
 - Error zsh: not found mysql
 
@@ -13,3 +13,17 @@
 
 - restart terminal
 - mysql command works
+
+
+## Error (MySQLdb.OperationalError) (1045, "Access denied for user 'root'@'localhost'
+
+- open terminal 
+- mysql -u root -h localhost -p
+- enter mysql password
+------ MySQL works---------
+- SELECT User,Host FROM mysql.user;   \\get list of users
+- RENAME USER 'test-user1'@'localhost' TO 'test-user1'@'%';   \\% means wildcard and will allow this user to log in remotely from anywhere.
+- FLUSH PRIVILEGES;
+- exit
+
+- type mysql in terminal and it works.
