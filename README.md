@@ -27,3 +27,8 @@
 - exit
 
 - type mysql in terminal and it works.
+
+
+## PSQL not found
+1) export POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/latest
+2) export PATH=${POSTGRES_HOME}/bin:${PATH}
